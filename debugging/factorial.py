@@ -13,9 +13,7 @@ if len(sys.argv) != 2:
     sys.exit(1)
 
 try:
-    num = int(sys.argv[1])
-    f = factorial(num)
+    f = factorial(int(sys.argv[1]))
     print(f)
 except ValueError:
     print("Error: Please provide a valid integer as the argument.")
-    sys.exit(1)
